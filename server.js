@@ -36,7 +36,7 @@ app.get('/produtos/:id', (req, res) => {
 
 
 // POST
-app.post('/produtos/:id', (req, res) => {
+app.post('/produtos', (req, res) => {
     const { nome, preco, descricao } = req.body;
 
     const sql = `
@@ -45,7 +45,7 @@ app.post('/produtos/:id', (req, res) => {
         RETURNING *
     `;
 
-    pool.query(sql, [nome, preco, descicao], (error, resultado) => {
+    pool.query(sql, [nome, preco, descricao], (error, resultado) => {
         console.log(error);
         console.log(resultado.rows);
 
@@ -55,5 +55,5 @@ app.post('/produtos/:id', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`servidor rodando com sucesso em http://localhost:3000${port}`);
+    console.log(`servidor rodando com sucesso em http://localhost:${port}`);
 });
