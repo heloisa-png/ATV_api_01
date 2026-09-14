@@ -53,7 +53,6 @@ app.post('/produtos', (req, res) => {
     });
 });
 
-
 app.listen(port, () => {
     console.log(`servidor rodando com sucesso em http://localhost:${port}`);
 });
