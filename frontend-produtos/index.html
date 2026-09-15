@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <h2>Cadastrar Produto</h2>
+    <form class="formulario-container" id="formulario">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="number" id="preco" placeholder="Preço" required>
+        <input type="text" id="descricao" placeholder="Descrição" required>
+
+        <button class="btn-salvar" type="submit">Salvar</button>
+    </form>
+
+    <h2>Exibir produto</h2>
+    <form class="formulario-container" id="form-exibir">
+        <input type="number" id="id-produto" placeholder="ID do Produto" required>
+        <button class="btn-exibir" type="submit">Exibir</button>
+    </form>
+
+    <div class="lista-container" id="exibir-produto"></div>
+
+
+    <h2>Lista de Produtos</h2>
+    <!-- É aqui dentro que o JavaScript vai jogar os produtos -->
+    <div class="lista-container" id="lista-produtos"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
