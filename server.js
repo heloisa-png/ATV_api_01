@@ -56,6 +56,7 @@ app.post('/produtos', (req, res) => {
     });
 });
 
+<<<<<<< HEAD
 
 // Deletar ID produto
 app.delete('/produtos/:id', (req, res) => {
@@ -75,6 +76,8 @@ app.delete('/produtos/:id', (req, res) => {
 
 //falta bbaixar as dependencias tirando express.
 
+=======
+>>>>>>> 3eae11b9983d82747e0ce9735ee590adf8c8f910
 app.listen(port, () => {
     console.log(`servidor rodando com sucesso em http://localhost:${port}`);
 });
